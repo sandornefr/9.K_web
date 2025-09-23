@@ -15,19 +15,19 @@
     <a id="alma" href="https://www.hazipatika.com/taplalkozas/zoldseg_gyumolcs/cikkek/az_alma_jotekony_hatasai" target="_blank"><img src="img/alma.png" alt="alma" title="alma" width="200"></a>
 
     <form action="javascript:void(0)">
-        <input type="checkbox" name="kep" id="kep_chk_01" onchange="kepmutat()">KÉP
+        <input type="checkbox" name="kep" id="kep_chk_01" onclick="kepmutat()">KÉP
     </form>
 
     <script>
         let showkep = 0;
         showkep = document.getElementById("kep_chk_01").value;
-        console.log(showkep);
 
         function kepmutat(){
-            if (showkep.style.display === "none") {
-                showkep.style.display = "block";
+        console.log(showkep);
+            if (alma.style.display === "none") {
+                alma.style.display = "block";
             } else {
-                showkep.style.display = "none";
+                alma.style.display = "none";
             }
         }
    
