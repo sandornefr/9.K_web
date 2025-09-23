@@ -24,11 +24,10 @@
         console.log(showkep);
 
         function kepmutat(){
-             if (showkep == "checked"){
-                document.getElementById(alma) = "show"
-            }
-            else{
-                document.getElementById(alma) = "hide"
+            if (showkep.style.display === "none") {
+                showkep.style.display = "block";
+            } else {
+                showkep.style.display = "none";
             }
         }
    
