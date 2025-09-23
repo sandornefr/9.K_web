@@ -12,6 +12,23 @@
     </nav>
     <h2>Kép + link feladat</h2>
     <br>
-    <a href="https://www.hazipatika.com/taplalkozas/zoldseg_gyumolcs/cikkek/az_alma_jotekony_hatasai" target="_blank"><img src="img/alma.png" alt="alma" title="alma" width="200"></a>
+    <a id="alma" href="https://www.hazipatika.com/taplalkozas/zoldseg_gyumolcs/cikkek/az_alma_jotekony_hatasai" target="_blank"><img src="img/alma.png" alt="alma" title="alma" width="200"></a>
+
+    <form action="javascript:void(0)">
+        <input type="checkbox" name="kep" id="kep_chk_01">
+    </form>
+
+    <script>
+        let showkep = 0;
+        showkep = document.getElementById("kep_chk_01");
+        console.log(showkep);
+
+        if (showkep == "checked"){
+
+        }
+
+
+    </script>
+
 </body>
 </html>
