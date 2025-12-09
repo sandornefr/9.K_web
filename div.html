@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV feladat</title>
+    <style>
+        /* Alap stílusok az egész oldalra */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .piros-doboz {
+            background-color: red;
+            width: 1400px;
+            height: 150px;
+            padding: 20px;
+            margin: 10px 40px;
+            color: white;
+        }
+
+        .kek-doboz {
+            background-color: blue;
+            width: 670px;
+            height: 150px;
+            padding: 20px;
+            margin: 10px 10px 10px 40px;
+            color: white;
+            float: left;
+        }
+
+        .zold-doboz {
+            background-color: green;
+            width: 670px;
+            height: 150px;
+            padding: 20px;
+            margin: 10px 40px 10px 10px;
+            color: white;
+            float: left;
+        }
+
+        .vilagoszold-doboz {
+            background-color: greenyellow;
+            border: 1px solid black;
+            width: 310px;
+            height: 70px;
+            padding: 10px;
+            margin-right: 5px;
+            color: black;
+            float: left;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        .zold-doboz p {
+            text-align: center;
+            margin: 0;
+        }
+
+        .sarga-doboz {
+            background-color: yellow;
+            border: 1px solid black;
+            width: 310px;
+            height: 70px;
+            padding: 10px;
+            color: black;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">FŐOLDAL</a> |
+        <a href="keplink.html">KÉPLINK</a> |
+        <a href="listak.html">LISTÁK</a> |
+        <a href="orarend.html">ÓRAREND</a> |
+        <a href="evszakok.html">ÉVSZAKOK</a> |
+        <a href="div.html">DIV FELADAT</a>
+    </nav>
+    <h1>A DIV elem gyakorlása</h1>
+
+    <!-- Első sor - Piros doboz -->
+    <div class="piros-doboz">
+        <h2>1. Piros doboz</h2>
+    </div>
+
+    <!-- Második sor -->
+    <div class="masodik-sor">
+        <div class="kek-doboz">
+            <h2>2.1 Kék doboz</h2>
+        </div>
+        <div class="zold-doboz">
+            <h2>2.2 Zöld doboz</h2>
+            <div class="vilagoszold-doboz">
+                <h3>2.2.1</h3>
+                <p>Világoszöld doboz</p>
+            </div>
+            <div class="sarga-doboz">
+                <h3>2.2.2</h3>
+                <p>Sárga doboz</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
